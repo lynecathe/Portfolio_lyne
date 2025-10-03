@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Cybersécurité – Catherine Ngango Koloko</title>
+  <meta name="description" content="Portfolio cybersécurité – SOC, Réseaux, DevSecOps, projets, labs et certifications." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", "Helvetica Neue", "Arial", "sans-serif"],
+          },
+          colors: {
+            primary: {50:'#eef9ff',100:'#d8f0ff',200:'#b9e4ff',300:'#88d3ff',400:'#4abaff',500:'#139dff',600:'#0b7fe2',700:'#0a64b3',800:'#0d538f',900:'#0f4776'}
+          },
+          boxShadow: {soft: '0 10px 30px -12px rgba(0,0,0,0.25)'}
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: light dark; }
+    .focus-ring { outline: 2px solid transparent; outline-offset: 2px; }
+    .focus-ring:focus-visible { outline-color: rgb(19 157 255); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100 antialiased">
+  <script>
+    const DATA = {
+      name: "Catherine Ngango Koloko",
+      role: "Étudiante Ingénieur·e – Cybersécurité (ECE Paris)",
+      summary: "Étudiante en 4ème année cybersécurité, en recherche d’alternance 2 ans (3 sem. entreprise / 3 sem. école) dès sept. 2025. Passionnée, motivée, avec un fort intérêt pour les métiers SOC, admin systèmes/réseaux et DevSecOps.",
+      location: "Villiers-sur-Marne, FR",
+      availability: "Disponible pour alternance 2 ans (3 semaines entreprise / 3 semaines école) à partir de sept. 2025",
+      socials: [
+        { label: "LinkedIn", url: "https://www.linkedin.com/in/catherine-ngango-40b1b8283" },
+        { label: "GitHub", url: "https://github.com/lynecathe" },
+        { label: "Email", url: "mailto:ngangolyne19@gmail.com" },
+        { label: "Téléphone", url: "tel:+33751282690" }
+      ],
+      skills: {
+        categories: [
+          { title: "Réseaux & Sécurité", items: ["TCP/IP","UDP","DHCP","HTTP/HTTPS","DNS","Pare-feu","IDS/IPS","VPN","LAN/WAN","Proxy","Honeypot (Cowrie)","Détection d'intrusion","Nmap","Wireshark","Cisco Packet Tracer","Analyse de logs","SSH/Telnet"] },
+          { title: "Développement", items: ["Python","Java","PHP","SQL","Vue.js","Node.js","Scripting d’automatisation","Environnements sécurisés en Python"] },
+          { title: "Virtualisation & Cloud", items: ["VMware","VirtualBox","Ubuntu Server","Docker","Terraform"] },
+          { title: "Outils & Documentation", items: ["Git","GitHub","Rédaction technique"] }
+        ]
+      },
+      badges: ["Analyste SOC", "Admin Système/Réseau", "DevSecOps"],
+      projects: [
+        { title: "Chatroom sécurisée en Python", when: "2024", tags: ["Python","Crypto","Réseau"], impact: "Développement en équipe d’une chatroom intranet avec chiffrement de bout en bout des messages.", links: [] },
+        { title: "Infrastructure de sécurité réseau", when: "2025", tags: ["OPNsense","VPN","Suricata","Proxy"], impact: "Mise en place pare-feux OPNsense, VPN site-à-site, proxy filtrant Squid, portail captif et IDS/IPS Suricata.", links: [] },
+        { title: "SOC virtuel avec Wazuh", when: "2025", tags: ["SOC","Wazuh","Logs"], impact: "Déploiement d’un environnement SOC basé sur Wazuh pour surveillance et détection d’incidents.", links: [] },
+        { title: "Honeypot SSH – Cowrie sur Ubuntu", when: "2025", tags: ["Blue Team","Threat Intel","Linux","SSH","Nmap"], impact: "Installation d’un honeypot interactif (Cowrie) pour capturer les tentatives SSH, analyse des logs et rapport détaillé.", links: [ { label: "Code", url: "https://github.com/lynecathe/cowrie-honeypot" }, { label: "Rapport", url: "Mini-projet_Cowrie_Honeypot.pdf" } ] }
+      ],
+      labs: [
+        { title: "TryHackMe – SOC Level 1", detail: "En cours", proof: "#" },
+        { title: "TryHackMe – Pre Security", detail: "2025", proof: "#" }
+      ],
+      certs: [
+        { title: "TryHackMe – SOC Level 1", year: "en cours" },
+        { title: "Cybersecurity Essentials (Cisco)", year: "2024" },
+        { title: "AZ-900 Azure Fundamentals", year: "2024" },
+        { title: "TryHackMe – Pre Security", year: "2025" }
+      ],
+      education: [
+        { school: "ECE Paris", program: "Cycle ingénieur – Cybersécurité", years: "2025-2028" },
+        { school: "EFREI Paris", program: "3ème année d’ingénieur – Cybersécurité", years: "2024-2025" },
+        { school: "Prépa Efrei", program: "Classe prépa Sécurité & Réseau", years: "2021-2024" }
+      ]
+    };
+  </script>
+
+  <header class="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/70 dark:bg-gray-950/70 border-b border-gray-200/60 dark:border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="font-extrabold tracking-tight text-xl focus-ring">CYBER·PORTFOLIO</a>
+      <nav class="hidden sm:flex items-center gap-5 text-sm">
+        <a class="hover:text-primary-600 focus-ring" href="#projets">Projets</a>
+        <a class="hover:text-primary-600 focus-ring" href="#competences">Compétences</a>
+        <a class="hover:text-primary-600 focus-ring" href="#labs">Labs</a>
+        <a class="hover:text-primary-600 focus-ring" href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="text-sm px-3 py-1.5 rounded-xl border border-gray-300 dark:border-gray-700 focus-ring">Mode</button>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-500/10 via-transparent to-primary-700/10 pointer-events-none"></div>
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
+            <span id="name">Catherine Ngango Koloko</span>
+          </h1>
+          <p class="mt-3 text-lg text-gray-700 dark:text-gray-300" id="role">Étudiante Ingénieur·e – Cybersécurité (ECE Paris)</p>
+          <p class="mt-4 text-gray-600 dark:text-gray-400" id="summary">Étudiante en 4ème année cybersécurité, en recherche d’alternance 2 ans (3 sem. entreprise / 3 sem. école) dès sept. 2025. Passionnée, motivée, avec un fort intérêt pour les métiers SOC, admin systèmes/réseaux et DevSecOps.</p>
+          <div class="mt-4 flex flex-wrap gap-2" id="badges"></div>
+          <div class="mt-6 flex flex-wrap gap-3 text-sm" id="socials"></div>
+          <div class="mt-3 text-xs text-gray-500" id="availability">Disponible pour alternance 2 ans (3 semaines entreprise / 3 semaines école) à partir de sept. 2025</div>
+        </div>
+        <div class="relative">
+          <div class="rounded-3xl border border-gray-200 dark:border-gray-800 p-6 shadow-soft bg-white/70 dark:bg-gray-900/60">
+            <div class="grid grid-cols-2 gap-3 text-xs">
+              <div class="p-3 rounded-xl bg-gray-100 dark:bg-gray-800">
+                <div class="font-semibold">Stack Sécurité</div>
+                <div class="mt-2 space-y-1 text-gray-600 dark:text-gray-300">
+                  <div>Wazuh / ELK</div>
+                  <div>Suricata / Snort</div>
+                  <div>OPNsense / pf</div>
+                </div>
+              </div>
+              <div class="p-3 rounded-xl bg-gray-100 dark:bg-gray-800">
+                <div class="font-semibold">Systèmes</div>
+                <div class="mt-2 space-y-1 text-gray-600 dark:text-gray-300">
+                  <div>Linux • Windows</div>
+                  <div>Docker • Git</div>
+                  <div>Python • Bash</div>
+                </div>
+              </div>
+              <div class="p-3 rounded-xl bg-gray-100 dark:bg-gray-800 col-span-2">
+                <div class="font-semibold">Objectif</div>
+                <p class="mt-2 text-gray-600 dark:text-gray-300">Alternance SOC / Admin Sys‑Réseau / DevSecOps, rythme 3 semaines entreprise / 3 semaines école.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projets" class="max-w-6xl mx-auto px-4 py-12">
+    <div class="flex items-end justify-between gap-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Projets</h2>
+      <div class="flex items-center gap-2 text-sm">
+        <label for="tagFilter" class="sr-only">Filtrer par tag</label>
+        <select id="tagFilter" class="px-3 py-2 rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 focus-ring">
+          <option value="">Tous les tags</option>
+        </select>
+      </div>
+    </div>
+    <div id="projectsGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </section>
+
+  <section id="competences" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-extrabold">Compétences</h2>
+    <div id="skills" class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <div class="grid md:grid-cols-2 gap-10">
+      <div id="labs">
+        <h2 class="text-2xl md:text-3xl font-extrabold">Labs</h2>
+        <ul class="mt-6 space-y-3" id="labsList"></ul>
+      </div>
+      <div id="certs">
+        <h2 class="text-2xl md:text-3xl font-extrabold">Certifications</h2>
+        <ul class="mt-6 space-y-3" id="certsList"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-extrabold">Éducation</h2>
+    <div id="edu" class="mt-6 grid md:grid-cols-2 gap-6"></div>
+  </section>
+
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-16">
+    <div class="rounded-3xl border border-gray-200 dark:border-gray-800 p-8 bg-white/70 dark:bg-gray-900/60 shadow-soft">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Contact</h2>
+      <p class="mt-3 text-gray-600 dark:text-gray-300">Envie d’échanger sur une opportunité d’alternance ou un projet ? Écrivez‑moi.</p>
+      <div class="mt-6 flex flex-wrap gap-3 text-sm" id="contactLinks"></div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-gray-500">
+    <div class="max-w-6xl mx-auto px-4">
+      © <span id="year"></span> <span id="footName"></span> — Portfolio cybersécurité. 
+    </div>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    function setTheme(mode){ if(mode==='dark'){root.classList.add('dark');localStorage.setItem('theme','dark');} else {root.classList.remove('dark');localStorage.setItem('theme','light');} }
+    setTheme(localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark':'light'));
+    themeToggle.addEventListener('click',()=>setTheme(root.classList.contains('dark')?'light':'dark'));
+
+    document.getElementById('name').textContent = DATA.name;
+    document.getElementById('role').textContent = DATA.role;
+    document.getElementById('summary').textContent = DATA.summary;
+    document.getElementById('availability').textContent = DATA.availability;
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('footName').textContent = DATA.name;
+
+    const badgesEl = document.getElementById('badges');
+    DATA.badges.forEach(b=>{const s=document.createElement('span');s.className='text-xs px-3 py-1 rounded-full bg-primary-100 text-primary-700 dark:bg-primary-800/40 dark:text-primary-200 border border-primary-200/60 dark;border-primary-700';s.textContent=b;badgesEl.appendChild(s);});
+
+    const socialsEl = document.getElementById('socials');
+    const contactLinks = document.getElementById('contactLinks');
+    DATA.socials.forEach(s=>{const a=document.createElement('a');a.href=s.url;a.target='_blank';a.rel='noreferrer noopener';a.className='px-3 py-1.5 rounded-xl border border-gray-300 dark:border-gray-700 hover:border-primary-400 hover:text-primary-700 dark:hover:text-primary-300 focus-ring';a.textContent=s.label;socialsEl.appendChild(a.cloneNode(true));contactLinks.appendChild(a);});
+
+    const projectsGrid=document.getElementById('projectsGrid');
+    const tagFilter=document.getElementById('tagFilter');
+    const allTags=Array.from(new Set(DATA.projects.flatMap(p=>p.tags)));allTags.forEach(t=>{const o=document.createElement('option');o.value=t;o.textContent=t;tagFilter.appendChild(o);});
+    function renderProjects(filter=''){projectsGrid.innerHTML='';DATA.projects.filter(p=>!filter||p.tags.includes(filter)).forEach(p=>{const card=document.createElement('article');card.className='rounded-2xl border border-gray-200 dark:border-gray-800 p-5 bg-white/70 dark:bg-gray-900/60 hover:shadow-soft transition-shadow';card.innerHTML=`
+      <div class="flex items-start justify-between gap-3"><h3 class="font-semibold text-lg">${p.title}</h3><span class="text-xs text-gray-500">${p.when}</span></div>
+      <div class="mt-2 flex flex-wrap gap-2">${p.tags.map(t=>`<span class='text-[11px] px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700'>${t}</span>`).join('')}</div>
+      <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">${p.impact}</p>
+      <div class="mt-4 flex flex-wrap gap-3 text-sm">${(p.links||[]).map(l=>`<a class='underline underline-offset-4 hover:no-underline focus-ring' href='${l.url}' target='_blank' rel='noreferrer noopener'>${l.label}</a>`).join('')}</div>`;projectsGrid.appendChild(card);});}
+    tagFilter.addEventListener('change',e=>renderProjects(e.target.value));renderProjects();
+
+    const skills=document.getElementById('skills');
+    DATA.skills.categories.forEach(c=>{const card=document.createElement('div');card.className='rounded-2xl border border-gray-200 dark:border-gray-800 p-5 bg-white/70 dark:bg-gray-900/60';card.innerHTML=`
+      <div class="font-semibold">${c.title}</div>
+      <ul class="mt-3 grid grid-cols-2 gap-2 text-sm text-gray-700 dark:text-gray-300">${c.items.map(i=>`<li class='px-2 py-1 rounded-lg bg-gray-100 dark:bg-gray-800'>${i}</li>`).join('')}</ul>`;skills.appendChild(card);});
+
+    const labsList=document.getElementById('labsList');
+    DATA.labs.forEach(l=>{const li=document.createElement('li');li.className='flex items-start justify-between gap-3 rounded-xl border border-gray-200 dark;border-gray-800 p-4 bg-white/70 dark:bg-gray-900/60';li.innerHTML=`
+      <div><div class="font-medium">${l.title}</div><div class="text-sm text-gray-600 dark:text-gray-300">${l.detail}</div></div>
+      ${l.proof && l.proof !== '#' ? `<a class="text-sm underline underline-offset-4 hover:no-underline focus-ring" href="${l.proof}" target="_blank" rel="noreferrer noopener">Preuve</a>` : ''}`;labsList.appendChild(li);});
+
+    const certsList=document.getElementById('certsList');
+    DATA.certs.forEach(c=>{const li=document.createElement('li');li.className='flex items-center justify-between gap-3 rounded-xl border border-gray-200 dark:border-gray-800 p-4 bg-white/70 dark:bg-gray-900/60';li.innerHTML=`<span class="font-medium">${c.title}</span><span class="text-sm text-gray-500">${c.year}</span>`;certsList.appendChild(li);});
+
+    const edu=document.getElementById('edu');
+    DATA.education.forEach(e=>{const card=document.createElement('div');card.className='rounded-2xl border border-gray-200 dark:border-gray-800 p-5 bg-white/70 dark:bg-gray-900/60';card.innerHTML=`
+      <div class="font-semibold">${e.school}</div>
+      <div class="text-sm text-gray-600 dark:text-gray-300">${e.program}</div>
+      <div class="text-xs text-gray-500 mt-1">${e.years}</div>`;edu.appendChild(card);});
+  </script>
+</body>
+</html>
